@@ -1,0 +1,98 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font: 16px Helvetica, Tahoma;
+  margin: 24px auto;
+  width: 800px;
+}
+
+.compare-form {
+  width: 100%;
+}
+
+  .compare-form__row {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+    .compare-form__row + .compare-form__row {
+      margin-top: 12px;
+    }
+
+  .compare-form__input,
+  .compare-form__label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+  }
+
+  .compare-form__button,
+  .compare-form__input {
+    font: inherit;
+    padding: 6px;
+  }
+
+  .compare-form__input {
+    width: 70%;
+  }
+
+.compare-error,
+.compare-progress {
+  color: gray;
+  display: none;
+  margin-top: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+  .compare-error--visible,
+  .compare-progress--visible {
+    display: block;
+  }
+
+.compare-error {
+  color: red;
+}
+
+.compare-list {
+  font-size: 14px;
+  list-style: none;
+  margin-top: 24px;
+  width: 100%;
+}
+
+  .compare-list__property {
+    white-space: nowrap;
+    width: 100%;
+  }
+
+    .compare-list__property + .compare-list__property {
+      margin-top: 12px;
+    }
+
+  .compare-list__property-name,
+  .compare-list__property-value {
+    box-sizing: border-box;
+    display: inline-block;
+    white-space: normal;
+    width: 30%;
+  }
+
+  .compare-list__property-value {
+    padding: 0 6px;
+    width: 35%;
+  }
+    .compare-list__property-value--bold {
+      font-weight: bold;
+    }
+
+  .compare-list__property-image {
+    width: 100%;
+  }
+

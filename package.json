@@ -1,0 +1,34 @@
+{
+  "name": "lazada-test-task",
+  "version": "1.0.0",
+  "description": "Lazada Test Task",
+  "main": "index.html",
+  "scripts": {
+    "test": "exit 0;",
+    "install": "mkdir build && browserify -o build/script.js src/script.js && cp src/styles.css src/index.html build",
+    "start": "http-server -o -p 8881 build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RomiC/LazadaTestTask.git"
+  },
+  "keywords": [
+    "lazada",
+    "test"
+  ],
+  "author": "Roman Charugin <i@charugin.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RomiC/LazadaTestTask/issues"
+  },
+  "homepage": "https://github.com/RomiC/LazadaTestTask#readme",
+  "dependencies": {
+    "classlist-polyfill": "^1.0.3",
+    "promise-polyfill": "^5.2.1",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "http-server": "^0.9.0"
+  }
+}
